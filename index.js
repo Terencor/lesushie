@@ -7,7 +7,7 @@ bot.on("ready", function () {
     console.log("Mon BOT est Connecté");
 })
 
-bot.login("NzUzNjY0NTc1Njg5NDU3NjY0.X1pe1Q.G8KtWQr5zYh83l7FRysjB2o6f0o");
+bot.login(process.env.BOT_TOKEN);
 
 bot.on('message', message => {
     if (message.content === 'salut le sushi') {

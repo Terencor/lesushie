@@ -7,31 +7,8 @@ bot.on("ready", function () {
     console.log("Mon BOT est Connecté");
 })
 
-bot.login(process.env.BOT_TOKEN);
+bot.login("NzUzNjY0NTc1Njg5NDU3NjY0.X1pe1Q.4gs4jYO1_5iDr_0lBwxBPMZwuY8");
 
-bot.on('message', message => {
-    if (message.content === 'salut le sushi') {
-      message.reply('Salut')
-    }
-  })
-
-  bot.on('message', message => {
-    if (message.content === 'salut @Le sushi#0890') {
-      message.reply('Salut')
-    }
-  })
-
-  bot.on('message', message => {
-    if (message.content === 'salut sushi') {
-      message.reply('Salut')
-    }
-  })
-
-  bot.on('message', message => {
-    if (message.content === 'salut le sushi') {
-      message.reply('Salut')
-    }
-  })
 
 bot.on('message', message => {
     if (message.content === '?info') {
@@ -45,10 +22,3 @@ bot.on('message', message => {
         message.channel.send(`Ton nom: ${message.author.username}\nTon ID: ${message.author.id}\n ${(message.author.displayAvatarURL())}`)
     }
   });
-
-  bot.on('message', message => {
-    if (message.content === '?commande') {
-      message.reply(':lock: 2 commandes trouver:lock:  :')
-    }
-  })
-
